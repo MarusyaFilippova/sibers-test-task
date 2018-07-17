@@ -1,0 +1,95 @@
+@import "fonts";
+
+.game__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.game__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.game__table {
+  max-width: 75vw;
+  font-size: 0;
+  line-height: 0;
+}
+
+.game__cell {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 1px solid #6ddf4c;
+  background-color: rgba(0, 0 ,0 ,0.25);
+}
+
+.game__cell--snake {
+  background-color: white;
+}
+
+.game__cell--food {
+  background-color: #fdff2b;
+}
+
+.game__score {
+  @include bold-text;
+}
+
+.game__level {
+  @include bold-text;
+}
+
+.game__modal {
+  position: fixed;
+  top: 150px;
+  left: calc(50% - 250px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.game__modal-question {
+  display: block;
+  margin: 16px auto;
+}
+
+.game__modal-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.game__modal-button {
+  width: 140px;
+  margin: 0 20px;
+  padding: 6px 0;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #a8c8c4;
+  border-radius: 10px;
+  background-color: rgba(168, 200, 196, 0.5);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(168, 200, 196, 0.75);
+    outline: none;
+  }
+
+  &:active {
+    background-color: rgba(168, 200, 196, 1);
+  }
+}

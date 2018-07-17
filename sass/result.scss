@@ -1,0 +1,45 @@
+.result__header {
+  position: relative;
+}
+
+.result__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.result__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.result__table {
+  width: 670px;
+  margin-bottom: 40px;
+
+  td {
+    border: 10px solid transparent;
+  }
+
+  th {
+    @include bold-text;
+    text-align: left;
+    border: 10px solid transparent;
+  }
+}
+
+th.result__total {
+  text-align: right;
+}
+
+.result__total {
+  min-width: 40px;
+  text-align: right;
+
+  &--final {
+    @include bold-text;
+  }
+}
+
+
+

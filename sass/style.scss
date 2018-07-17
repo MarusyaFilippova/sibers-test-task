@@ -1,0 +1,39 @@
+@import "fonts";
+@import "intro";
+@import "game";
+@import "result";
+
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: #6ddf4c linear-gradient(to bottom left, #7bdf69, #6ddf4c) no-repeat;
+  @include regular-text;
+  color: #00222d;
+  min-height: 100vh;
+}
+
+
+a {
+  color: #00222d;
+}
+
+.central {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.back {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
